@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LoginScreen</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="loginHint">Enter your Username</string>
+    <string name="passwordHint">Enter your Password</string>
+    <string name="loginButton">Login</string>
+    <string name="mcc_logo">MCC Logo</string>
+
+    <string name="errLogin">Invalid Username. Try again.</string>
+    <string name="errPassword">Invalid Password. try again.</string>
+</resources>
