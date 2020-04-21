@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">LoginScreen</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="loginHint">Enter your Username</string>
+    <string name="passwordHint">Enter your Password</string>
+    <string name="loginButton">Login</string>
+    <string name="mcc_logo">MCC Logo</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="Phone">Phone #</string>
+    <string name="birthday">Date of Birth</string>
+    <string-array name="Month">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string name="day">Day</string>
+    <string name="year">Year</string>
+    <string name="certificate">Certificate</string>
+    <string name="degree">Associates Degree</string>
+    <string name="txtMajor">Major</string>
+    <string name="txtNext">Next</string>
+    <string-array name="lstCertificate">
+        <item>Android Certificate</item>
+        <item>iOS Mobile Certificate</item>
+    </string-array>
+    <string-array name="Major">
+        <item>Digital Media</item>
+        <item>Mobile Application Development</item>
+        <item>Web Development</item>
+    </string-array>
+
+    <string name="errLogin">Invalid Username. Try again.</string>
+    <string name="errPassword">Invalid Password. try again.</string>
+</resources>
