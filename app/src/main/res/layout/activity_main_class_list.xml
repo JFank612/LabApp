@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="auto"
+    tools:context=".MainClassList">
+
+    <EditText
+        android:id="@+id/idFirstName"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/FirstName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idLastName"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/FirstName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toEndOf="@+id/idFirstName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Phone"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idFirstName" />
+
+    <EditText
+        android:id="@+id/idPhoneInput"
+        android:layout_width="249dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:autoText="true"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/idPhone"
+        app:layout_constraintTop_toBottomOf="@+id/idLastName" />
+
+    <Spinner
+        android:id="@+id/idMonthSpinner"
+        android:layout_width="96dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:entries="@array/Month"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toEndOf="@+id/idBirthDate"
+        app:layout_constraintTop_toBottomOf="@+id/idPhoneInput" />
+
+    <TextView
+        android:id="@+id/idBirthDate"
+        android:layout_width="83dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/birthday"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPhone" />
+
+    <EditText
+        android:id="@+id/idYearInput"
+        android:layout_width="82dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/year"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/idDayInput"
+        app:layout_constraintTop_toBottomOf="@+id/idPhoneInput" />
+
+    <EditText
+        android:id="@+id/idDayInput"
+        android:layout_width="82dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/day"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/idMonthSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/idPhoneInput" />
+
+    <Switch
+        android:id="@+id/idSchoolSwitch"
+        android:layout_width="379dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="112dp"
+        android:checked="true"
+        android:switchMinWidth="379dp"
+        android:textOff="@string/certificate"
+        android:textOn="@string/degree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idMonthSpinner"
+        tools:checked="true" />
+
+    <TextView
+        android:id="@+id/idAssociates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/degree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idYearInput" />
+
+    <Spinner
+        android:id="@+id/idCertSpinner"
+        android:layout_width="170dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="44dp"
+        android:entries="@array/lstCertificate"
+        app:layout_constraintEnd_toStartOf="@+id/idDegreeSpinner"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSchoolSwitch" />
+
+    <TextView
+        android:id="@+id/idCertTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/certificate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCertSpinner" />
+
+    <TextView
+        android:id="@+id/idDegreeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/txtMajor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toEndOf="@+id/idCertTxt"
+        app:layout_constraintTop_toBottomOf="@+id/idDegreeSpinner" />
+
+    <Spinner
+        android:id="@+id/idDegreeSpinner"
+        android:layout_width="170dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:entries="@array/Major"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSchoolSwitch" />
+
+    <TextView
+        android:id="@+id/idCertificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="@string/certificate"
+        app:layout_constraintEnd_toStartOf="@+id/idAssociates"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBirthDate" />
+
+    <Button
+        android:id="@+id/idNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="@string/txtNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSchoolSwitch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
