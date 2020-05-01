@@ -12,7 +12,7 @@ class MainClassList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_class_list)
 
-        val schoolSwitch = findViewById<Switch>(R.id.idSchoolSwitch)
+        val schoolSwitch = findViewById<Switch>(R.id.swDegreeCert)
         val degreeSpinner = findViewById<Spinner>(R.id.idDegreeSpinner)
         val certSpinner = findViewById<Spinner>(R.id.idCertSpinner)
         val txtCertificate = findViewById<TextView>(R.id.idCertTxt)
@@ -21,11 +21,11 @@ class MainClassList : AppCompatActivity() {
 
         val firstName = findViewById<EditText>(R.id.idFirstName)
         val lastName = findViewById<EditText>(R.id.idLastName)
-        val phone = findViewById<EditText>(R.id.idPhoneInput)
+        val phone = findViewById<EditText>(R.id.txtPhone)
 
-        val spnMonth = findViewById<Spinner>(R.id.idMonthSpinner)
-        val dayInput = findViewById<EditText>(R.id.idDayInput)
-        val yearInput = findViewById<EditText>(R.id.idYearInput)
+        val spnMonth = findViewById<Spinner>(R.id.idspnMonth)
+        val dayInput = findViewById<EditText>(R.id.txtDay)
+        val yearInput = findViewById<EditText>(R.id.txtYear)
 
 
         firstName.requestFocus()
@@ -72,9 +72,9 @@ class MainClassList : AppCompatActivity() {
     private fun checkData(): Boolean {
         val firstName = findViewById<EditText>(R.id.idFirstName)
         val lastName = findViewById<EditText>(R.id.idLastName)
-        val phone = findViewById<EditText>(R.id.idPhoneInput)
-        val dayInput = findViewById<EditText>(R.id.idDayInput)
-        val yearInput = findViewById<EditText>(R.id.idYearInput)
+        val phone = findViewById<EditText>(R.id.txtPhone)
+        val dayInput = findViewById<EditText>(R.id.txtDay)
+        val yearInput = findViewById<EditText>(R.id.txtYear)
 
 
         if (firstName.text.toString().isEmpty()) {
