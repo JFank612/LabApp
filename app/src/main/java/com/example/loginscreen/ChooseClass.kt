@@ -58,7 +58,7 @@ class ChooseClass : Activity() {
         val extras = intent.extras
         if (extras != null) {
             firstName = extras.getString("FirstName")
-            lastName = extras.getString("lastName")
+            lastName = extras.getString("LastName")
             phone = extras.getString("Phone")
             birthDate = extras.getString("BirthDate")
             isDegreeCert = extras.getString("isDegreeCert")
